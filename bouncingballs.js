@@ -21,15 +21,23 @@
     var HEIGHT = 300;
     var draw;
     var rect, c1, c2;
+    var c3, text, group;
 
     function init() {
 
-        draw = global.SVG('drawing').size(600, 300).attr({ 'font-size': 10 }).fill('#f06');
+        draw = global.SVG('drawing').size(600, 300);
         rect = draw.rect(100, 100).attr({ fill: 'yellow' });
         c1 = draw.circle(20).center(x1, y1).attr({ fill: 'green' });
         c2 = draw.circle(25).center(x2, y2).attr({ fill: 'blue' });
-        draw.rect(100, 100).center(150, 150).draggable();
-
+        c3 = draw.circle(100).center(200, 150).fill('rgba(255,255,0,0.1)');
+        text = draw.text("Drag me!\nCan you?");
+        text.font({ family: 'Helvetica', size: '15', anchor: 'middle' });
+        text.dx(200);
+        text.cy(150);
+        group=draw.group();
+        group.add(text);
+        group.add(c3);
+        group.draggable();
 
         rect.radius(30);
         rect.cx(x3);
@@ -81,8 +89,8 @@
 
         x3 += dx3;
         y3 += dy3;
-        // rect.cx(x3);
-        // rect.cy(y3);
+        // group.move(x3,y3);
+        
         rect.transform({ rotation: rot });
 
     }
