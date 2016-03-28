@@ -34,15 +34,13 @@
         rect.radius(30);
         rect.cx(x3);
         rect.cy(y3);
-
-        setInterval(drawAll, 10);
     }
 
     function drawAll() {
         draw1();
         draw2();
         draw3();
-
+        requestAnimationFrame(drawAll);
 
     }
 
@@ -90,5 +88,6 @@
     }
 
     init();
+    drawAll();
 
 })(window);
