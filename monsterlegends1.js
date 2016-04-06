@@ -10,7 +10,7 @@ $(function($) {
 
     var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
-    var containerSize = Math.min(w, h);
+    var containerSize = Math.min(w*.9, h*.9);
     var monsters=[];
 
     var txt = board.create('text',[-6,9.75, 'SpaceBar: New Monsters'], {fontSize:14});
