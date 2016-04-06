@@ -6,7 +6,6 @@ $(function($) {
         showCopyright: false
     });
 
-    console.log("Teset");
     var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
     var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
@@ -14,6 +13,7 @@ $(function($) {
     var containerSize = Math.min(w, h);
     var monsters=[];
 
+    var txt = board.create('text',[-6,9.75, 'SpaceBar: New Monsters'], {fontSize:14});
 
 
     board.resizeContainer(containerSize, containerSize);
