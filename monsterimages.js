@@ -553,7 +553,7 @@ function monsterEggLinks() {
 }
 
 
-function monsterChildLinks() {
+function monsterChildrenLinks() {
 
 return(["http://s8.postimg.org/agz62tmb9/Elder_Sporeling_1.png"
 ,"http://s8.postimg.org/58454y3w5/Electrex_1.png"

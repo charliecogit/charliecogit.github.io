@@ -1,0 +1,50 @@
+h1 {
+    text-align: center;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+
+}
+
+.slider-container {
+    display: -webkit-flex;
+    display: flex;
+    align-content: center;
+    padding-bottom: 0.5rem;
+}
+
+.slider-text {
+    text-align: right;
+    width: 5rem;
+    padding-right: 0.5rem;
+}
+
+.sliderstyle {
+    float: left;
+    width: 20rem;
+}
+
+.slidervalue {
+    color: #f6931f;
+    width: 3rem;
+    text-align: right;
+    font-weight: bold;
+
+}
+
+
+#refresh {
+    display:block;
+    font-size: 5rem;
+    color: blue;
+    border-radius: 10%;
+    
+}
