@@ -10,7 +10,8 @@ h1 {
 .flex-container {
     display: -webkit-flex;
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    width:30rem;
     justify-content: center;
 
 }
@@ -42,10 +43,10 @@ h1 {
 }
 
 
-#refresh {
-    display:block;
-    font-size: 5rem;
-    color: blue;
-    border-radius: 10%;
-    
+#repopulate {
+    width: 7rem;
+}
+
+#repopulate:hover {
+    opacity: 0.9;
 }
