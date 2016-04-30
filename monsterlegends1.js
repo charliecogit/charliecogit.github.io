@@ -67,6 +67,7 @@ $(function($) {
         axis: true,
         showCopyright: false
     });
+
     var w = $(document).width();
     
     var h = $(document).height();
